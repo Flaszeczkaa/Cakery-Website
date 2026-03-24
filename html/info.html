@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Informacje o projekcie-Domowe Wypieki</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="admin-navbar">
+                <a class="a-links" href="../html/info.html">Strona informacyjna</a>
+                <div class="links-admin">
+                    <a class="a-links admin-only" href="../html/my-profile.html">Mój Profil</a>
+                    <a class="a-links admin-only" href="../html/posts.html">Posty</a>
+                    <a class="a-links admin-only" href="../html/users.html">Użytkownicy</a>
+                    <a class="a-links admin-only" href="../html/statistics.html">Statystyki</a>
+                    <a class="a-links" id="login-link" href="../index.html">Zaloguj się</a>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <img src="../img/logo.png" alt="Logo" class="logo" width="170px">
+                <ul class="nav-list">
+                    <li><a class="a-links" href="../index.html#main-section">Strona Główna</a></li>
+                    <li><a class="a-links" href="../html/cakes.html">Ciasta</a></li>
+                    <li><a class="a-links" href="../html/birthdaycakes.html#birthdaycakes-section">Torty</a></li>
+                    <li><a class="a-links" href="../index.html#price-section">Cennik</a></li>
+                    <li><a class="a-links" href="../index.html#contact-section">Kontakt</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+
+        <main>
+            <section id="info-section">
+                <div class="note-card info-card" style="transform: none;">
+                    <i class='bx bxs-info-circle note-pin'></i>
+                    <h1 class="cakes-title">Informacje o projekcie</h1>
+                    
+                    <table class="price-table info-table">
+                        <tr>
+                            <th>Autor:</th>
+                            <td>Natalia Flaszka</td>
+                        </tr>
+                        <tr>
+                            <th>Nr indeksu:</th>
+                            <td>420530</td> 
+                        </tr>
+                        <tr>
+                            <th>Przedmiot:</th>
+                            <td>Projektowanie Serwisów Internetowych</td>
+                        </tr>
+                        <tr>
+                            <th>Rok akademicki:</th>
+                            <td>2025/2026</td>
+                        </tr>
+                        <tr>
+                            <th>Testowano na:</th>
+                            <td>Firefox, Opera, Edge</td>
+                        </tr>
+                    </table>
+
+                    <div class="action-buttons">
+                        <a href="../doc/SpecyfikacjaProjektowa.pdf" target="_blank" class="main-button">
+                            <i class='bx bxs-file-pdf'></i> Zobacz Specyfikację
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; Natalia Flaszka</p>
+        </footer>
+
+        <div id="LogInModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <h2 class="title">Logowanie</h2>
+                <form class="contact-form">
+                    <input class="input-main" type="text" placeholder="Nazwa użytkownika" required>
+                    <input class="input-main" type="password" placeholder="Hasło" required>
+                    <button class="main-button" type="submit">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>

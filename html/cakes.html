@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Ciasta-Domowe Wypieki</title>
+    </head>
+    <body>
+        <header class="main-header">
+            
+           <div class="admin-navbar">
+                <a class="a-links" href="../html/info.html">Strona informacyjna</a>
+                <div class="links-admin">
+                    <a class="a-links admin-only" href="../html/my-profile.html">Mój Profil</a>
+                    <a class="a-links admin-only" href="../html/posts.html">Posty</a>
+                    <a class="a-links admin-only" href="../html/users.html">Użytkownicy</a>
+                    <a class="a-links admin-only" href="../html/statistics.html">Statystyki</a>
+                    <a class="a-links" id="login-link" href="../index.html">Zaloguj się</a>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <img src="../img/logo.png" alt="Logo" class="logo" width="170px">
+                <ul class="nav-list">
+                    <li><a class="a-links" href="../index.html#main-section">Strona Główna</a></li>
+                    <li><a class="a-links" href="#posts-section">Ciasta</a></li>
+                    <li><a class="a-links" href="../html/birthdaycakes.html#birthdaycakes-section">Torty</a></li>
+                    <li><a class="a-links" href="../index.html#price-section">Cennik</a></li>
+                    <li><a class="a-links" href="../index.html#contact-section">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+        <section id="posts-section">
+            <h2 class="title">Galeria Oferowanych Ciast:</h2>
+
+            <div class="slider">
+                <button class="slider-btn prev-btn" id="prevBtn"><i class='bx bx-chevron-left'></i></button>
+
+                <div class="slider-track" id="sliderTrack">
+                    
+                    <div class="post-card-item">
+                        <h3 class="post-name">Sernik Królewski</h3>
+                        <div class="post-img">
+                            <img src="../img/sernikkrolewski.png" alt="Sernik Królewski">
+                        </div>
+                        <p class="post-description">Tradycyjny sernik z kręconego twarogu na ciemnym, kruchym spodzie.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Seromakowiec</h3>
+                        <div class="post-img">
+                            <img src="../img/seromakowiec.png" alt="Seromakowiec">
+                        </div>
+                        <p class="post-description">Idealne połączenie wilgotnej masy serowej i makowej na kruchym cieście.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Słonecznikowiec</h3>
+                        <div class="post-img">
+                            <img src="../img/slonecznikowiec.png" alt="Słonecznikowiec">
+                        </div>
+                        <p class="post-description">Wyjątkowe ciasto z masą kajmakową, prażonym słonecznikiem i kakowym wykończeniem.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Makowiec Japoński</h3>
+                        <div class="post-img">
+                            <img src="../img/japonski.png" alt="Makowiec Japoński">
+                        </div>
+                        <p class="post-description">Wilgotne ciasto makowe z kręconego maku z dodatkiem jabłek, oblane czekoladą.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Izaura</h3>
+                        <div class="post-img">
+                            <img src="../img/izaura.png" alt="Izaura">
+                        </div>
+                        <p class="post-description">Ciemne ciasto czekoladowe z delikatną wkładką serową i polewą.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Chałwowiec</h3>
+                        <div class="post-img">
+                            <img src="../img/chałwowiec.png" alt="Chałwowiec">
+                        </div>
+                        <p class="post-description">Puszysty czekoladowy biszkopt przełożony dżemem z czarnej porzeczki, kremem o smaku chałwy oraz kremem kakaowym.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Malinowa Chmurka</h3>
+                        <div class="post-img">
+                            <img src="../img/malinowa.png" alt="Malinowa Chmurka">
+                        </div>
+                        <p class="post-description">Kruche ciasto, galaretka z malinami, krem śmietankowy i chrupiąca beza.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Jabłecznik Cappuccino</h3>
+                        <div class="post-img">
+                            <img src="../img/cappuccino.png" alt="Jabłecznik Cappuccino">
+                        </div>
+                        <p class="post-description">Aromatyczne ciasto z jabłkami i ananasem oraz delikatną nutą kremu cappuccino.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Kubanka</h3>
+                        <div class="post-img">
+                            <img src="../img/kubanka.png" alt="Kubanka">
+                        </div>
+                        <p class="post-description">Biszkopt kakaowy, masa budyniowa, herbatniki i dżem porzeczkowy.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Raffaello</h3>
+                        <div class="post-img">
+                            <img src="../img/raffaello.png" alt="Raffaello">
+                        </div>
+                        <p class="post-description">Biszkopt z aksamitnym kremem kokosowym i białą czekoladą.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Pijana Śliwka</h3>
+                        <div class="post-img">
+                            <img src="../img/sliwka.png" alt="Pijana Śliwka">
+                        </div>
+                        <p class="post-description">Czekoladowy biszkopt z kremem i śliwkami nasączonymi alkoholem.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Krówka</h3>
+                        <div class="post-img">
+                            <img src="../img/krowka.png" alt="Krówka">
+                        </div>
+                        <p class="post-description">Ciasto miodowe przełożone masą budyniową i słodkim kajmakiem.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Morze Czarne</h3>
+                        <div class="post-img">
+                            <img src="../img/morze.png" alt="Morze Czarne">
+                        </div>
+                        <p class="post-description">Ciemne ciasto kakaowe z warstwą kremu kakaowego, frużeliną wiśniową aksamitnym kremem śmietanowym i bezą.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Sernik Nowojorski</h3>
+                        <div class="post-img">
+                            <img src="../img/nowojorski.png" alt="Sernik Nowojorski">
+                        </div>
+                        <p class="post-description">Kremowy, gęsty i aksamitny sernik z okrągłej tortownicy. Możliwość personalizowanego wykończenia.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Szarlotka</h3>
+                        <div class="post-img">
+                            <img src="../img/szarlotka.png" alt="Szarlotka">
+                        </div>
+                        <p class="post-description">Tradycyjne ciasto kruche z dużą ilością prażonych jabłek i kruszonką.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Keks</h3>
+                        <div class="post-img">
+                            <img src="../img/keks.png" alt="Keks">
+                        </div>
+                        <p class="post-description">Wilgotne ciasto ucierane z bogactwem bakalii i owoców kandyzowanych.</p>
+                    </div>
+
+                    <div class="post-card-item">
+                        <h3 class="post-name">Piernik Korzenny</h3>
+                        <div class="post-img">
+                            <img src="../img/piernik.png" alt="Piernik Korzenny">
+                        </div>
+                        <p class="post-description">Aromatyczne ciasto z miodem i autorską mieszanką przypraw korzennych.</p>
+                    </div>
+
+                </div>
+
+                <button class="slider-btn next-btn" id="nextBtn"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; Natalia Flaszka</p>
+        </footer>
+
+        <div id="LogInModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <h2 class="title">Logowanie</h2>
+                <form class="contact-form">
+                    <input class="input-main" type="text" placeholder="Nazwa użytkownika" required>
+                    <input class="input-main" type="password" placeholder="Hasło" required>
+                    <button class="main-button" type="submit">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>

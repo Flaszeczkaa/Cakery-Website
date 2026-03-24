@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Domowe Wypieki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="admin-navbar">
+                <a class="a-links" href="html/info.html">Strona informacyjna</a>
+                <div class="links-admin">
+                    <a class="a-links admin-only" href="html/my-profile.html">Mój Profil</a>
+                    <a class="a-links admin-only" href="html/posts.html">Posty</a>
+                    <a class="a-links admin-only" href="html/users.html">Użytkownicy</a>
+                    <a class="a-links admin-only" href="html/statistics.html">Statystyki</a>
+                    <a class="a-links" id="login-link" href="index.html">Zaloguj się</a>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <img src="img/logo.png" alt="Logo" class="logo" width="170px">
+                <ul class="nav-list">
+                    <li><a class="a-links" href="index.html#main-section">Strona Główna</a></li>
+                    <li><a class="a-links" href="html/cakes.html#posts-section">Ciasta</a></li>
+                    <li><a class="a-links" href="html/birthdaycakes.html#birthdaycakes-section">Torty</a></li>
+                    <li><a class="a-links" href="index.html#price-section">Cennik</a></li>
+                    <li><a class="a-links" href="index.html#contact-section">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="main-section">
+                <div class="circle-shape"></div>
+
+                <div class="promotion-note">
+                    <div class="note-box"><i class='bx bxs-award'></i>Naturalne Składniki</div>
+                </div>
+
+                <div class="cakes-image cake-photo">
+                    <img src="img/mainsection-cake.png" width="820px" alt="Tort urodzinowy" class="cake-img">
+                </div>
+
+                <div class="cakes-info">
+                    <h1 class="cakes-title">Domowe wypieki<br> z nutą <span class="text-highlighting">nowoczesności!</span></h1>
+
+                    <p class="cakes-intro">
+                        Odkryj smak, który przywołuje wspomnienia. Piekę z pasją, używając wyłącznie 
+                        <strong>prawdziwego masła, swojskich jaj i kręconego twarogu</strong>. 
+                        Oferuję  wypieki <strong>bezglutenowe</strong>. Sama mam celiakię, więc doskonale rozumiem rygorystyczne zasady diety i 
+                        daję Ci pewność, że moje wypieki są <strong>całkowicie bezpieczne</strong> dla Twojego zdrowia.
+                    </p>
+                       
+                    </p>
+
+                    <ul class="cakes-features">
+                        <li>
+                            <div class="cakes-iconbox"><i class='bx bx-home-heart'></i></div>
+                            <div class="cakes-promotion">
+                                <strong>Autorskie receptury</strong>
+                                <p>Unikalne połączenia smaków, których nie znajdziesz w cukierni.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cakes-iconbox"><i class='bx bx-leaf'></i></div>
+                            <div class="cakes-promotion">
+                                <strong>Naturalne składniki</strong>
+                                <p>Brak spulchniaczy i konserwantów. Tylko wyborne składniki - w tym jajka od swojskiej kury.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cakes-iconbox"><i class='bx bx-check-shield'></i></div>
+                            <div class="cakes-promotion">
+                                <strong>Opcja bezglutenowa!</strong>
+                                <p>Pełnia smaku i 100% bezpieczeństwa dla alergików - bez ryzyka krzyżowych zanieczyszczeń.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="action-buttons">
+                        <a href="index.html#contact-section" class="main-button order-button">Zamów wypiek !</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section id="price-section">
+            <div class="price-container">
+                <h2 class="title">Nasz cennik ciast:</h2>
+                <p class="price-description">Torty wyceniane są indywidualnie - zapraszam do kontaktu!</p>
+            </div>
+
+            <div class="table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Rodzaj ciasta</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sernik królewski/klasyczny</td>
+                            <td class="price">130 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Seromakowiec</td>
+                            <td class="price">130 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Słonecznikowiec</td>
+                            <td class="price">130 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Makowiec japoński</td>
+                            <td class="price">130 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Izaura</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Chałwowiec</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Malinowa chmurka</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Jabłecznik cappucino</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Kubanka</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Raffaello</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Pijana śliwka</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Krówka</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Morze czarne</td>
+                            <td class="price">120 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Sernik nowojorski</td>
+                            <td class="price">110 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Szarlotka</td>
+                            <td class="price">90 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Keks</td>
+                            <td class="price">75 ZŁ</td>
+                        </tr>
+                        <tr>
+                            <td>Piernik korzenny</td>
+                            <td class="price">75 ZŁ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <div class="contact-header">
+                <h2 class="title">Zamów wyjątkowy wypiek!</h2>
+                <p class="contact-description">
+                Każde zamówienie traktuje indywidualnie — z pasją, sercem i dbałością o każdy szczegół.
+                Skontaktuj się ze mną, a wspólnie stworzymy coś pysznego!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <form class="contact-form">
+                <input class="input-main" type="text" placeholder="Imię" required>
+                <input class="input-main" type="text" placeholder="Nazwisko" required>
+                <input class="input-main" type="email" placeholder="Twój e-mail" required>
+                <textarea class="input-main" placeholder="Twoja wiadomość..." rows="5" required></textarea>
+                <button class="main-button" type="submit">Wyślij wiadomość</button>
+                </form>
+
+                <div class="contact-info">
+                <a href="tel:+48572935373" class="icon-text">📞 Zadzwoń: +48 572 935 373</a>
+                <a href="https://www.facebook.com/people/Domowe-wypieki-z-pasj%C4%85-r%C3%B3wnie%C5%BC-bezglutenowe/61577701172185/" target="_blank" class="icon-text">
+                    <i class='bx bxl-facebook-circle'></i> Odwiedź nas na Facebooku!
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; Natalia Flaszka</p>
+        </footer>
+
+        <div id="LogInModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <h2 class="title">Logowanie</h2>
+                <form class="contact-form">
+                    <input class="input-main" type="text" placeholder="Nazwa użytkownika" required>
+                    <input class="input-main" type="password" placeholder="Hasło" required>
+                    <button class="main-button" type="submit">Zaloguj się</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Admina/Użytkownicy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="main-header">
+        <div class="admin-navbar">
+            <a class="a-links" href="../html/info.html">Strona informacyjna</a>
+            <div class="links-admin">
+                <a class="a-links admin-only" href="../html/my-profile.html">Mój Profil</a>
+                <a class="a-links admin-only" href="../html/posts.html">Posty</a>
+                <a class="a-links admin-only" href="../html/users.html">Użytkownicy</a>
+                <a class="a-links admin-only" href="../html/statistics.html">Statystyki</a>
+                <a class="a-links" id="login-link" href="../index.html">Zaloguj się</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <img src="../img/logo.png" alt="Logo" class="logo" width="170px">
+            <ul class="nav-list">
+                <li><a class="a-links" href="../index.html#main-section">Strona Główna</a></li>
+                <li><a class="a-links" href="../html/cakes.html">Ciasta</a></li>
+                <li><a class="a-links" href="../html/birthdaycakes.html#birthdaycakes-section">Torty</a></li>
+                <li><a class="a-links" href="../index.html#price-section">Cennik</a></li>
+                <li><a class="a-links" href="../index.html#contact-section">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="users">       
+        <h2 class="title title-edit">Zarządzanie Użytkownikami</h2>
+        <div class="table-container ">
+            <table class="price-table users-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Imię i Nazwisko</th>
+                        <th>Rola</th>
+                        <th>E-mail</th>
+                        <th>Edycja</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Natalia Flaszka</td>
+                        <td>Admin</td>
+                        <td>nflaszka@op.pl</td>
+                        <td class="price"><a href="../html/my-profile.html" class="edit-button">Mój profil</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jan Kowalski</td>
+                        <td>Klient</td>
+                        <td>jkowal@net.com</td>
+                        <td class="price"><a href="../html/users-edit.html" class="edit-button">Edytuj</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Adam Kowalski</td>
+                        <td>Klient</td>
+                        <td>kowal@op.pl</td>
+                        <td class="price"><a href="../html/users-edit.html" class="edit-button">Edytuj</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Jan Kot</td>
+                        <td>Klient</td>
+                        <td>jan.kot@op.pl</td>
+                        <td class="price"><a href="../html/users-edit.html" class="edit-button">Edytuj</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Maja Kot</td>
+                        <td>Klient</td>
+                        <td>mkot@wp.pl</td>
+                        <td class="price"><a href="../html/users-edit.html" class="edit-button">Edytuj</a></td>
+                    </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Ada Mok</td>
+                        <td>Klient</td>
+                        <td>adamok@wp.pl</td>
+                        <td class="price"><a href="../html/users-edit.html" class="edit-button">Edytuj</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; Natalia Flaszka</p>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

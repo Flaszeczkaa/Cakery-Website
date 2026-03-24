@@ -1,0 +1,1257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root{
+  --nav-color: #4A2C2A;
+  --headers: #371C17;
+  --background:#FFFAEB;
+  --buttons:#A0522D;
+  --text: #5D4037;
+  --links:#C8A4A4;
+}
+
+body {
+    max-width: 1600px; 
+    margin: 0 auto; 
+    background-color: var(--background); 
+}
+
+/* Admin Navbar */
+.admin-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 74px;
+  background-color: var(--background);
+  position: relative; 
+  z-index: 100;
+}
+
+.admin-navbar a{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--headers);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-links:hover{
+  color: var(--buttons);
+}
+
+.links-admin{
+  display: flex;
+  gap: 35px;
+  font-weight: 600;
+  color: var(--headers);
+}
+
+.admin-only {
+  display: none;
+}
+
+/* Main Navbar */
+.navbar{
+  background-color: var(--headers);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 54px;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav-list a, li{
+  text-decoration: none;
+  color: var(--background);
+  padding: 8px 12px; 
+  font-size: 24px;
+  font-weight: 900px;
+  cursor: pointer;
+}
+
+/* Hero section i Torty też mają te klasy */
+#main-section, #birthdaycakes-section  {
+  background-color: var(--background);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 120px;
+  min-height: 85vh;
+  display: flex;
+}
+
+.circle-shape {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-15%);
+  width: 50%;
+  height: 120%;
+  background: var(--links);
+  border-radius: 0 50% 50% 0 ;
+  z-index: 1;
+  opacity: 98%;
+  box-shadow: 10px 0 50px rgba(55, 28, 23, 0.2);
+}
+
+.cake-img{
+  margin-left: -80px;
+}
+
+.note-box {
+  position: absolute;
+  top: 40px;
+  left: 360px;
+  background: var(--background);
+  color: var(--buttons);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.note-box i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.cakes-image {
+  position: relative;
+  z-index: 2; 
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: -60px;
+}
+
+.cakes-info {
+  max-width: 600px;
+  padding-left: 20px; 
+  z-index: 2;
+}
+
+.cakes-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--headers);
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.cakes-intro {
+  font-size: 18px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  border-left: 4px solid var(--links);
+}
+
+.text-highlighting {
+  color: var(--buttons);
+  margin-left: 5px;
+  position: relative;
+  font-style: italic;
+  border-bottom: 5px solid var(--buttons);
+}
+
+.cakes-features {
+  list-style: none;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cakes-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.cakes-features strong {
+  font-size: 18px;
+  color: var(--headers);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.cakes-features p {
+  font-size: 15px;
+  color: var(--text);
+  margin: 0;
+  opacity: 0.9;
+}
+
+.cakes-iconbox {
+  min-width: 50px;
+  height: 50px;
+  background-color: rgba(160, 82, 45, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--buttons);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-note {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.main-button {
+  background-color: var(--buttons);
+  color: var(--background);
+  padding: 16px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(160, 82, 45, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.main-button:hover {
+  background-color:var(--headers);
+  box-shadow: 0 8px 20px rgba(160, 82, 45, 0.6);
+  cursor: pointer;
+}
+
+.order-button {
+  margin: auto;
+  font-size: 24px;
+  padding: 16px 120px;
+}
+
+/* Cennik */
+#price-section {
+  background-color: var(--background);
+  padding: 60px 20px;
+}
+
+.title { 
+  font-size: 42px; 
+  font-weight: 900; 
+  color: var(--headers); 
+  margin-bottom: 20px; 
+  text-shadow: 2px 2px 4px rgba(200, 164, 164, 0.4); 
+  letter-spacing: 1px; 
+  text-align: center;
+} 
+    
+.price-description { 
+  font-size: 20px; 
+  color: var(--text); 
+  margin-bottom: 40px; 
+  opacity: 0.9;
+  text-align: center; 
+}
+
+.table-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--background);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(55, 28, 23, 0.15);
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+  color: var(--text);
+}
+
+.price-table th {
+  background-color: var(--headers);
+  color: white;
+  padding: 14px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.price-table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--nav-color);
+}
+
+.price{
+  font-weight: 700;
+  color: var(--nav-color);
+  text-align: center;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: rgba(200, 164, 164, 0.15);
+}
+
+.price-table tr:hover {
+  background-color: rgba(160, 82, 45, 0.15);
+  transition: 0.3s ease;
+}
+
+/* Kontakt */
+#contact-section {
+  background-color: var(--background);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-header {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.contact-description {
+  font-size: 20px;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-main {
+  padding: 12px;
+  border: 1px solid var(--links);
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  color: var(--text);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.bxl-facebook-circle {
+  font-size: 24px;
+  color: #3b5998;
+  text-decoration: none;
+}
+
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--buttons);
+  text-decoration: none;
+}
+
+.icon-text i {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Footer */
+.main-footer{
+    background-color: var(--headers);
+    color: var(--background);
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+/* Modal logowania */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content{
+  background-color: var(--background);
+  margin: auto;
+  padding: 40px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(65, 20, 20, 0.2);
+  text-align: center;
+}
+
+.title-modal{
+  font-size: 32px;
+  color: var(--headers);
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.close{
+  color: var(--text);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Torty opisy dodatków */
+#birthdaycake-adds{
+  background-color: var(--background);
+  padding: 60px 20px;
+  position: relative;
+}
+.birthdaycake-title {
+  margin-bottom: 80px;
+}
+
+.adds-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.note-card {
+  background-color: var(--background);
+  width: 380px; 
+  padding: 40px 30px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4); 
+  border-radius: 2px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.note-pin {
+  position: absolute;
+  top: -18px; 
+  left: 46%;
+  font-size: 36px;
+  color: var(--buttons); 
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.note-title {
+  font-size: 24px;
+  color: var(--headers);
+  margin-bottom: 25px;
+  border-bottom: 2px dashed var(--links); 
+  padding-bottom: 10px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.note-list li, .simple-list li {
+  font-size: 16px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.note-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px 15px; 
+  padding: 0;
+}
+
+.simple-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0 26px;
+}
+
+.note-card:nth-child(1) {
+    transform: rotate(-2deg);
+}
+
+.note-card:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+.note-card:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+/* Strona informacyjna */
+#info-section, #users, #posts, #post-edit{
+  background: var(--background);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.info-card {
+  width: 100%;
+  max-width: 800px;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info-table{
+  border: 2px solid var(--headers);
+}
+
+/* Posty na stronie z ciastami */
+#posts-section {
+  padding: 60px 20px;
+  background-color: var(--background);
+  position: relative;
+}
+
+.post-card-item {
+  font-size: 16px;
+  color: var(--text);
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+.post-card-item {
+  min-width: 320px; 
+  max-width: 320px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(55, 28, 23, 0.1);
+  border: 1px solid rgba(160, 82, 45, 0.1);
+  flex-shrink: 0; 
+}
+
+.post-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--headers);
+  margin-bottom: 10px;
+}
+
+.post-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-description {
+  font-size: 16px;
+  color: var(--text);
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scrollbar-width: none;
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none; 
+}
+
+.slider-btn {
+  background-color: var(--buttons);
+  border: none;
+  color: var(--background);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 5px 15px rgba(160, 82, 45, 0.4);
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.slider-btn:hover {
+  background-color: var(--headers);
+  transform: scale(1.1);
+}
+
+.prev-btn { left: -20px; }
+.next-btn { right: -20px; }
+
+/* Użytkownicy i Posty*/
+
+.users-table{
+  text-align: center;
+}
+
+.edit-button {
+  background-color: var(--buttons);
+  color: var(--background);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.edit-button:hover {
+  background-color: var(--headers);
+}
+
+/* Edycja postów i uzytkownikow */
+.buttons{
+  margin-top: 30px;
+  display: flex;
+  gap: 125px;
+  justify-content: center;
+}
+
+.label-edit {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--headers);
+}
+
+
+/* Responsywność strony */
+
+@media (max-width: 1240px) {
+  #main-section, #birthdaycakes-section {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #main-section, #birthdaycakes-section {
+    gap: 60px;
+  }
+
+  .note-box {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+  }
+
+  .simple-list {
+    text-align: left;
+    margin: 0 ;
+  }
+}
+
+@media (max-width: 1070px) {
+    #main-section, #birthdaycakes-section {
+        gap: 20px;
+    }
+    .admin-navbar a {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .nav-list a, li {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .cake-img{
+      width: 650px;
+      height: auto;
+    }
+
+    .note-box {
+      position: absolute;
+      top: 80px;
+      left: 250px;
+    }
+
+    .cakes-intro {
+      font-size: 16px;
+    }
+
+    .title {
+      font-size: 36px;
+    }
+
+    .cakes-title {
+      font-size: 36px;
+    }
+
+    .birthdaycake-img {
+      width: 350px;
+      height: auto;
+    }
+
+    .order-button {
+      padding: 10px 80px;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .cakes-features {
+      gap: 0px;
+    }
+
+    .cakes-iconbox {
+      min-width: 40px;
+      height: 40px;
+      font-size: 24px;
+    }
+
+    .cakes-promotion p {
+      font-size: 14px;
+    }
+
+    .cakes-promotion strong {
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 920px) {
+   
+    .cakes-info {
+      padding-left: 0;
+    }
+     #birthdaycake-adds .note-card {
+        width: 90%;             
+        max-width: 340px;     
+        padding: 30px 20px;     
+        margin: 0 auto;
+    }
+
+    .note-list {
+        grid-template-columns: 1fr; 
+        gap: 2px;
+        text-align: left; 
+        padding-left: 10px;
+    }
+
+    .simple-list {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .note-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .nav-list a, li {
+        font-size: 18px;
+    }
+
+    .nav-list {
+        gap: 5px;
+    }
+}
+
+@media(max-width: 885px) {
+   #main-section, #birthdaycakes-section {
+        gap: 0px;
+    }
+
+    .note-box {
+      display: none;
+    }
+}
+
+
+@media (max-width: 851px) {
+
+    .users-table-container th, .users-table-container td {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .title-edit{
+      font-size: 28px;
+    }
+
+     .nav-list a, li {
+        font-size: 16px;
+    }
+
+    .navbar{
+        gap: 0px;
+        margin: 0;
+        padding: 10px;
+    }
+
+     .admin-navbar {
+        gap: 0;
+        padding: 10px 15px;
+        margin: 0;
+        font-size: 14px;
+    }
+ 
+    /* hero i torty */
+     #main-section{
+        flex-direction: column;
+        padding: 30px;
+        gap: 0; 
+        text-align: center;
+        display: flex;
+        overflow: visible;
+     }
+
+    #main-section .circle-shape {
+        display: flex !important;
+        position: absolute;
+        top: 50%;     
+        left: 20%;       
+        width: 90%;     
+        height: 100%;
+        background: var(--links); 
+        opacity: 0.25; 
+        z-index: 1;   
+        border-radius: 45% 55% 70% 30% / 30% 60% 40% 70%;
+      
+    }
+    #birthdaycakes-section {
+        flex-direction: column;
+        padding: 0;
+        gap: 0; 
+        text-align: center;
+        display: flex;
+        overflow: visible; 
+      }
+
+    .circle-shape, .promotion-note, .note-box, .cake-img{
+        display: none !important;
+    }
+
+    #birthdaycakes-section .cakes-image {
+        display: flex !important;
+        width: 100%;
+        padding-bottom: 10px; 
+        margin: 0;
+        background-color: var(--links); 
+        border-radius: 0 0 40% 40%; 
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        margin-bottom: 20px; 
+    }
+
+    .birthdaycake-img {
+        width: 65%;      
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        transform: translateY(20px); 
+        filter: drop-shadow(0 15px 25px rgba(55, 28, 23, 0.25));
+    }
+
+    .cakes-info {
+        padding: 0 20px; 
+        width: 100%;
+        max-width: 600px; 
+        margin: 0 auto;   
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .cakes-title {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+        margin-top: 20px; 
+    }
+
+    .cakes-intro {
+        border: none;
+        padding: 0;
+        font-size: 17px;
+        line-height: 1.6; 
+        margin-bottom: 35px;
+        color: var(--text);
+        text-align: center; 
+    }
+    
+    .cakes-features {
+        align-items: flex-start; 
+        text-align: left; 
+        gap: 25px;
+        width: fit-content; 
+        margin: 0 auto 40px auto;
+    }
+
+    .action-buttons {
+        width: 100%;       
+        padding: 0 20px;   
+        box-sizing: border-box; 
+    }
+
+    .order-button  {
+        width: 100%;      
+        max-width: none;  
+        padding: 16px 0;   
+        font-size: 18px;   
+        margin: 0;         
+        display: block;    
+    }
+
+    /* sticki notes */
+    .adds-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .note-card {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* tabela cennika i formularz kontaktowy */
+    .price-table {
+        font-size: 16px; /
+    }
+
+    .price-table th {
+        font-size: 16px;
+        padding: 10px 5px; 
+    }
+
+    .price-table td {
+        padding: 8px 5px; 
+    }
+    
+    .table-container {
+        padding: 10px; 
+        width: 95%;
+    }
+
+    .contact-form {
+        width: 95%; 
+        gap: 10px;  
+    }
+
+    .input-main {
+        padding: 10px; 
+        font-size: 16px;
+    }
+
+    .contact-info {
+        font-size: 16px; 
+        margin-top: 20px;
+    }
+
+    .contact-header {
+        max-width: 550px; 
+        width: 100%;
+        margin: 0 auto 25px auto; 
+        padding: 0 10px; 
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .contact-description {
+        font-size: 15px; 
+        line-height: 1.5; 
+        color: var(--text);
+        opacity: 0.9;
+    }
+
+    .contact-form .main-button, .buttons {
+        width: 100%;       
+        font-size: 18px;   
+        padding: 14px;     
+        margin-top: 10px;  
+    }
+
+    .contact-info {
+        width: 100%;
+        max-width: 500px; 
+        margin: 25px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;      
+    }
+
+   
+    .icon-text {
+        justify-content: center; 
+        font-size: 18px;        
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .icon-text i {
+        font-size: 24px;        
+        margin-right: 8px;      
+    }
+}
+
+@media(max-width: 691px){
+  .logo{
+    display: none;
+  }
+
+  .nav-list a, li {
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+  }
+
+  .nav-list {
+        margin: auto;
+        justify-content: space-between;
+        width: 95%;
+
+  }
+
+    .navbar{
+        gap: 0px;
+        margin: auto;
+        padding: 0px;
+
+    }
+
+     .admin-navbar a, li {
+        gap: 0;
+        margin: 0;
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .admin-navbar{
+        gap: 0px;
+        margin: auto;
+        padding: 5px 10px;
+    }
+
+    .links-admin{
+        gap: 8px;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .buttons .main-button, .action-buttons .main-button{     
+        padding: 16px 30px;   
+        font-size: 14px;   
+        margin: 0;   
+        text-align: center;     
+        width: auto; 
+    }
+
+}
+@media (max-width: 520px) {
+
+    .slider-track {
+        gap: 15px;                
+        padding: 10px 20px;       
+        
+        scroll-snap-type: x mandatory; 
+        justify-content: flex-start; 
+    }
+
+    .post-card-item {
+        
+        min-width: 85vw; 
+        max-width: 85vw;
+        margin: 0;
+        
+        scroll-snap-align: center; 
+        
+        padding: 20px;
+    }
+
+    .post-name { font-size: 18px; }
+    .post-description { font-size: 14px; }
+    
+    /* przewijanie tylko palcem) */
+    .slider-btn { display: none !important; }
+
+    .nav-list {
+        gap: 0px;
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-list a, li {
+        font-size: 12px; 
+        padding: 5px;
+    }
+
+    .admin-navbar { padding: 0px; }
+    .admin-navbar a { font-size: 10px; } 
+
+
+    #main-section {
+        padding: 80px 15px 40px 15px; 
+    }
+
+    .cakes-title {
+        font-size: 26px; 
+    }
+
+    .cakes-intro {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    #main-section .circle-shape {
+        width: 120%;
+        left: -10%;
+    }
+
+    .birthdaycake-img {
+        width: 85%; 
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 0;
+        overflow-x: auto; 
+    }
+
+    .price-table {
+        font-size: 13px; 
+    }
+
+    .price-table th, .price-table td {
+        padding: 8px 4px; 
+    }
+    
+    .title { font-size: 24px; } 
+
+    .contact-header { padding: 0 5px; }
+    
+    .contact-form .main-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .icon-text { font-size: 15px; }
+    .icon-text i { font-size: 20px; }
+
+
+    .note-card {
+        width: 100%; 
+        padding: 20px 15px;
+    }
+    
+    .note-title { font-size: 20px; }
+    
+    .note-list, .simple-list {
+        padding-left: 5px;
+    }
+    
+    .note-list li, .simple-list li {
+        font-size: 14px; 
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    
+    #main-section, #birthdaycakes-section {
+        min-height: auto; 
+        padding: 40px 20px;
+    }
+
+    .cakes-image {
+        display: none !important; 
+    }
+
+    .circle-shape {
+        display: none !important; 
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+    
+    .nav-list {
+        flex-direction: row; 
+        gap: 15px;
+    } 
+  }
