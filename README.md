@@ -22,8 +22,3 @@ Nowoczesna, statyczna witryna internetowa stworzona dla lokalnej cukierni. Proje
 - `/img` - zasoby graficzne i zdjęcia produktów.
 - `/doc` - dokumentacja techniczna projektu.
 
-## 🚀 Podgląd (Live Demo)
-> [Tutaj możesz wkleić link do GitHub Pages, jeśli je włączysz]
-
-## 📝 Autor
-[Twoje Imię i Nazwisko]
