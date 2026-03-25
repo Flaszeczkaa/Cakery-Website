@@ -1,24 +1,23 @@
-# Domowe wypieki z pasją - Profesjonalna Strona Cukierni
+# Homemade Baking with Passion – Professional Bakery Website
 
-Nowoczesna, statyczna witryna internetowa stworzona dla lokalnej cukierni. Projekt skupia się na estetycznej prezentacji oferty oraz intuicyjnym interfejsie użytkownika.
+A modern, static website created for a local bakery. The project focuses on aesthetic presentation of the offer and an intuitive user interface.
 
-## 🍰 Funkcje projektu
-- **Strona główna:** Atrakcyjny baner i skrót najważniejszych informacji.
-- **Katalog produktów:** Podział na torty urodzinowe, ciasta i wypieki.
-- **Panel użytkownika:** Statyczne podstrony profilu, edycji postów oraz statystyk (makieta panelu admina).
-- **Formularz kontaktowy:** Stylowy formularz umożliwiający kontakt z cukiernią.
-- **Pełna responsywność:** Strona dostosowana do urządzeń mobilnych i tabletów.
+## 🍰 Project Features
+- **Homepage:** Attractive banner and a summary of key information.
+- **Product Catalog:** Categories including birthday cakes, pastries, and baked goods.
+- **User Panel:** tatic subpages for profile, post editing, and statistics (admin panel mockup).
+- **Contact Form:** Styled form enabling users to contact the bakery.
+- **Fully Responsive:** Optimized for mobile devices and tablets.
 
-## 🛠️ Technologie
-- **HTML5:** Semantyczna struktura dokumentów.
-- **CSS3:** Nowoczesny layout (Flexbox/Grid), niestandardowe czcionki i animacje.
-- **JavaScript:** Podstawowa interaktywność i obsługa formularzy.
-- **Dokumentacja:** Pełna specyfikacja projektowa w formacie PDF (folder `/doc`).
+## 🛠️ Technologies
+- **HTML5:** Semantic document structure.
+- **CSS3:** Modern layout (Flexbox/Grid), custom fonts, and animations.
+- **JavaScript:** Basic interactivity and form handling.
 
-## 📁 Struktura folderów
-- `/html` - wszystkie podstrony serwisu.
-- `/css` - arkusze stylów.
-- `/js` - skrypty JavaScript.
-- `/img` - zasoby graficzne i zdjęcia produktów.
-- `/doc` - dokumentacja techniczna projektu.
+## 📁 Folder Structure
+- `/html` - all website subpagesu.
+- `/css` - stylesheets.
+- `/js` - JavaScript scripts.
+- `/img` - images and product assets.
+- `/doc` - technical documentation.
 
