@@ -1,5 +1,7 @@
 # 🥐 Homemade Baking with Passion – Bakery Website
 
+**[🌐 Click here to see the live website!]([Wklej_Tu_Swoj_Link_Z_GitHub_Pages](https://flaszeczkaa.github.io/Cakery-Website/))**
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
